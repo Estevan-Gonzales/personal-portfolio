@@ -24,11 +24,6 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div>
-      <h1>Portfolio</h1>
-      <div className="container">
-        <Project projects = {projects} />
-      </div>
-    </div>
+    <Project projects = {projects} />
   );
 }

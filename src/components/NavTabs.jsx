@@ -4,7 +4,7 @@ function NavTabs({ currentPage, handlePageChange }) {
   return (
     <div className='row'>
         <div className = 'col-12'>
-            <nav className="nav nav-pills justify-content-end p-2 bg-light">
+            <nav className="nav nav-pills justify-content-end p-2 bg-dark">
                 <li className="nav-item">
                   <a href="#About" onClick={() => handlePageChange('About')}className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}>
                     About Me

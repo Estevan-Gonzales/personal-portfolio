@@ -1,3 +1,4 @@
-.single-project-box {
-    background-color: blue
+.single-project {
+    margin: 50px;
+    border: solid black;
 }

@@ -4,7 +4,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 
-function Header() {
+function Display() {
 
   const [currentPage, setCurrentPage] = useState('About');
 
@@ -21,22 +21,20 @@ function Header() {
     }
   };
 
-      const handlePageChange = (page) => setCurrentPage(page);
+  const handlePageChange = (page) => setCurrentPage(page);
   return (
-      <div>
-
-      <header className="headerclass">
-
+    <div>
+      <header>
         <div>
           <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
         </div>
-
       </header>
-      {/* We are passing the currentPage from state and the function to update it */}
-      {/* Here we are calling the renderPage method which will return a component  */}
-        <main className="mx-3">{renderPage()}</main>
-      </div>
+      
+      <body>
+        {renderPage()}
+      </body>
+    </div>
   );
 }
 
-export default Header;
+export default Display;
